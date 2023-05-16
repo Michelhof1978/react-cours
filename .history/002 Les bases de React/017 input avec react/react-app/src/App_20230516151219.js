@@ -12,8 +12,7 @@ function App() {
  
 const changeInput = (e) => {//Sera déclenché grâce à l événement onInput ci dessous dés que l on écrit ds le input
     // console.log(e);
-    
-    setInputData(e)//Mets à jour à chaque fois qu'il y a mouvement ds une input
+    setInputData(e)//Mets à jour
   }//Ensuite, la fonction changeInput est définie. Elle prend un argument e, qui représente l'objet 
   // Event de l'événement "input" déclenché lorsque l'utilisateur saisit ou modifie la valeur du champ 
   // de saisie. Cette fonction met à jour la valeur de inputData en utilisant setInputData avec la 
