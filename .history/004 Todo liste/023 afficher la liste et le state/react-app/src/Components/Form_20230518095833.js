@@ -3,7 +3,7 @@ import Item from './Item'
 
 export default function Form(){
 
-    const [dataArr, setDataArr] = useState([//Toujours utiliser les hooks à la racine du projet
+    const [dataArr, setDataArr] = useState([//Toujours 
         {txt: "Promener le chien"},
         {txt: "Sport"},
         {txt: "Coder avec React"},

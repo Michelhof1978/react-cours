@@ -22,14 +22,14 @@ function App() {
 
   return (
     <div className="App">
-        {dataImg && //Si dataImg est true, on affiche ci dessous si false, on affiche rien
+        {dataImg && //S
         <img src={dataImg}/>//Nous vérifions si dataImg est défini grâce à {dataImg && ...}. Si dataImg est défini, alors nous affichons une balise img avec l'URL de l'image de chat comme source (src={dataImg}).
         alt="cat image"
         style={{width: "500px"}}
         />}
     </div>
   );
-}//A chaque fois que l on fera appel, une image de chat diffèrente s affichera
+}
 
 export default App;
 

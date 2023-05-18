@@ -29,7 +29,7 @@ function App() {
         />}
     </div>
   );
-}//A chaque fois que l on fera appel, une image de chat diffèrente s affichera
+}//A chaque fois que l on fera appel, une image de chat 
 
 export default App;
 
