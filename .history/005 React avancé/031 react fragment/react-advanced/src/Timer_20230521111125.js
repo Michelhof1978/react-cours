@@ -21,7 +21,7 @@ function Timer() {
   return (//Avec return, on peut retourner qu un seul élement jsx mais ds cet élément, il peut y en avoir plusieurs, si plusieurs éléments, cela voudra dire que ça envois plusieurs return et là, il y aurait un problème
     <>
     {/* //Eviter de créer un Div qui crérera un noeud ds le Dom pour rien
-    Les chevrons qui englobent les h1 sont des fragments, pas besoins d importer les fragments ds import {useState, useEffect} from 'react' */}
+    Les chevrons qui englobent les h1 */}
         <h1>{timer}</h1>
         <h1>{timer}</h1>
         <h1>{timer}</h1>

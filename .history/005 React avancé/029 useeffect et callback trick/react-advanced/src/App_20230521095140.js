@@ -7,11 +7,11 @@ function App() {
 
   useEffect(() => {
 
-    const intervalID = setInterval(() => {//Permet de rafraichir le state en un nouveau state chaque seconde, setInterval va retourner un id
-      setTimer(timer => timer + 1)//Fonction callback, Utilisé uniquement comme ça pour React
+    const intervalID = setInterval(() => {
+      setTimer(timer => timer + 1)
     }, 1000)//Incrémentation de 1 toutes les 1 seconds
 
-    return () => {//Ici, on doit pouvoir effacer la mémoire en supprimant le id de intervalID quand le composant sera supprimé (enfin s il se supprime)sinon, la mémoire sera encombré
+    return () => {
       clearInterval(intervalID);
     }
 

@@ -11,7 +11,7 @@ function App() {
       setTimer(timer => timer + 1)//Fonction callback, Utilisé uniquement comme ça pour React
     }, 1000)//Incrémentation de 1 toutes les 1 seconds
 
-    return () => {//Ici, on doit pouvoir effacer la mémoire en supprimant le id de intervalID quand le composant sera supprimé (enfin s il se supprime)sinon, la mémoire sera encombré
+    return () => {//Ici, on doit pouvoir effacer la mémoire en supprimant le id de intervalID quand le composantsinon, la mémoire sera encombré
       clearInterval(intervalID);
     }
 

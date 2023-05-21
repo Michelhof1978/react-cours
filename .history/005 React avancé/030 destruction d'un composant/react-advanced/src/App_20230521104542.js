@@ -10,7 +10,7 @@ function App() {
 
   const toggleFunc = () => {
     setToggle(!toggle)
-  }//La fonction toggleFunc change l'état de toggle pour être l'opposé de ce qu'il est actuellement.
+  // }//La fonction toggleFunc change l'état de toggle pour être l'opposé de ce qu'il est actuellement.
   //  Si toggle est true, l'appel à setToggle(!toggle) le mettra à false, et vice versa.
   // Cette fonction est généralement utilisée pour contrôler l'état d'affichage de certaines parties 
   // d'un composant, comme dans un composant de basculement (toggle), où vous voudriez montrer ou cacher
@@ -22,7 +22,7 @@ function App() {
     <div className="App">
 
         <button onClick={toggleFunc}>Toggle</button>
-        {/* //On clic sur le bouton pour pouvoir détruire le composant */}
+        //On clic sur le bouton pour pouvoir détruire le composant
         {toggle && <Timer />}
         {/* //Si toggle est true, j envoie le timer sinon, je renvoi rien */}
     </div>

@@ -22,7 +22,7 @@ function App() {
     <div className="App">
 
         <button onClick={toggleFunc}>Toggle</button>
-        {/* //On clic sur le bouton pour pouvoir détruire le composant */}
+        //On clic sur le bouton pour pouvoir détruire le composant
         {toggle && <Timer />}
         {/* //Si toggle est true, j envoie le timer sinon, je renvoi rien */}
     </div>
