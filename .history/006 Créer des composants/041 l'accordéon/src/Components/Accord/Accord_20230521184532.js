@@ -13,9 +13,9 @@ export default function Accord() {
 
     const refHeight = useRef();
 
-    useEffect(() => {//On va définir la hauteur de notre élément lorsque le composant sera bien chargé
+    useEffect(() => {
         
-        setHeightEl(`${refHeight.current.scrollHeight}px`) // définit l'état de `heightEl` sur la 
+        // setHeightEl(`${refHeight.current.scrollHeight}px`) définit l'état de `heightEl` sur la 
         // hauteur de défilement de l'élément DOM référencé. La propriété `scrollHeight` d'un élément
         //  DOM est une propriété en lecture seule qui renvoie la hauteur d'un élément en pixels, y 
         //  compris le remplissage, mais pas la bordure, la barre de défilement ou la marge.
@@ -36,8 +36,7 @@ export default function Accord() {
             <div 
             ref={refHeight} 
             className={toggle ? 'accord-toggle animated' : 'accord-toggle'}
-            style={{height: toggle ? `${heightEl}` : "0px"}} 
-            // Si toggle est vrai, la hauteur est définie sur la valeur de heightEl (qui inclut l'unité 'px'), et si toggle est faux, la hauteur est définie sur '0px'.
+            style={{height: toggle ? `${heightEl}` : "0px"}}
             >
                 <p
                 aria-hidden={toggle ? "true" : "false"}

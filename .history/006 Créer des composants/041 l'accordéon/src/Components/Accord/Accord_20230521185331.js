@@ -36,7 +36,6 @@ export default function Accord() {
             <div 
             ref={refHeight} 
             className={toggle ? 'accord-toggle animated' : 'accord-toggle'}
-            style={{height: toggle ? `${heightEl}` : "0px"}} 
             // Si toggle est vrai, la hauteur est définie sur la valeur de heightEl (qui inclut l'unité 'px'), et si toggle est faux, la hauteur est définie sur '0px'.
             >
                 <p

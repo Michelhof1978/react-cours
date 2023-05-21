@@ -13,20 +13,14 @@ export default function Navbar() {
     
         const changeWidth = () => {
             setLargeur(window.innerWidth);
-  // la fonction setLargeur, qui est une fonction de définition d'état renvoyée par le crochet useState.
-  // Lorsque setLargeur(window.innerWidth); est appelée, elle fixe l'état de largeur à la largeur
-  // actuelle de la fenêtre (viewport). window.innerWidth est une propriété JavaScript intégrée qui 
-  // renvoie la largeur intérieure de la fenêtre en pixels.
-  // Cet élément d'état largeur est ensuite utilisé dans le composant pour déterminer s'il faut afficher
-  // ou masquer le menu de navigation en fonction de la largeur de la fenêtre.
+  la fonction setLargeur, qui est une fonction de définition d'état renvoyée par le crochet useState.
+
+Lorsque setLargeur(window.innerWidth); est appelée, elle fixe l'état de largeur à la largeur actuelle de la fenêtre (viewport). window.innerWidth est une propriété JavaScript intégrée qui renvoie la largeur intérieure de la fenêtre en pixels.
+
+Cet élément d'état largeur est ensuite utilisé dans le composant pour déterminer s'il faut afficher ou masquer le menu de navigation en fonction de la largeur de la fenêtre.
         }
 
         window.addEventListener('resize', changeWidth);
-  //  Cette ligne de code ajoute un écouteur d'événement à l'objet window. Cet écouteur répondra chaque
-  // fois qu'un événement de redimensionnement est déclenché, ce qui se produit chaque fois que la 
-  // fenêtre du navigateur est redimensionnée.
-  // Lorsqu'un événement de redimensionnement est détecté, l'écouteur appelle la fonction changeWidth,
-  // qui est définie dans le crochet useEffect environnant.
 
         return () => {
             window.removeEventListener('resize', changeWidth);

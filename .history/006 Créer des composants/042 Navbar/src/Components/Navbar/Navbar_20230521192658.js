@@ -21,7 +21,7 @@ export default function Navbar() {
   // ou masquer le menu de navigation en fonction de la largeur de la fenêtre.
         }
 
-        window.addEventListener('resize', changeWidth);
+  //       window.addEventListener('resize', changeWidth);
   //  Cette ligne de code ajoute un écouteur d'événement à l'objet window. Cet écouteur répondra chaque
   // fois qu'un événement de redimensionnement est déclenché, ce qui se produit chaque fois que la 
   // fenêtre du navigateur est redimensionnée.

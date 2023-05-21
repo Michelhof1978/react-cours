@@ -22,11 +22,10 @@ export default function Navbar() {
         }
 
         window.addEventListener('resize', changeWidth);
-  //  Cette ligne de code ajoute un écouteur d'événement à l'objet window. Cet écouteur répondra chaque
-  // fois qu'un événement de redimensionnement est déclenché, ce qui se produit chaque fois que la 
-  // fenêtre du navigateur est redimensionnée.
-  // Lorsqu'un événement de redimensionnement est détecté, l'écouteur appelle la fonction changeWidth,
-  // qui est définie dans le crochet useEffect environnant.
+   Cette ligne de code ajoute un écouteur d'événement à l'objet window. Cet écouteur répondra chaque
+    fois qu'un événement de redimensionnement est déclenché, ce qui se produit chaque fois que la fenêtre du navigateur est redimensionnée.
+
+        Lorsqu'un événement de redimensionnement est détecté, l'écouteur appelle la fonction changeWidth, qui est définie dans le crochet useEffect environnant.
 
         return () => {
             window.removeEventListener('resize', changeWidth);
