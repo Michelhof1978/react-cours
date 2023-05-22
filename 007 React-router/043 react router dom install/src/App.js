@@ -4,17 +4,32 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../components/Home';
 import Profile from '../components/Profile/Profile';
 import NotFound from '../components/NotFound/NotFound';
+import NavBar from '../components/NavBar/NavBar';
+import Services from '../components/Services/Services';
+import Contact from '../components/Contact/Contact';
+import development from '../components/Services/development/development';
+import CyberSecurity from '../components/Services/CyberSecurity/CyberSecurity';
 
 function App() {
   return (
     <div className="App">
+      <NavBar/>
+
      <Routes>
 
       <Route path='/' element={<Home />}/>      {/* path = chemin// element = composant */}
       <Route path='/profil/:id' element={<Profile />}/> 
       {/* //Cette route pourra grâce à son id (on peut lui donner le nom que l on veut) présenter plusieurs routes à plusieurs administrateurs */}
-      
       <Route path='*' element={<NotFound/>}/> 
+     
+      <Route path='/services' element={<Services />}/>  
+
+        <Route path='/services/development' element={<development/>}/>  {/* Route imbriqué qu'on appelle route enfants ds une autre route */}
+        <Route path='/services/cybersecurite' element={<CyberSecurity/>}/>  {/* Route imbriqué qu'on appelle route enfants ds une autre route */}
+   </Route>
+
+      <Route path='/contact' element={<Contact />}/>  
+
      </Routes>
     </div>
   );
