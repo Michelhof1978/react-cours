@@ -1,0 +1,34 @@
+.btn-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.dark-btn {
+    background: #222;
+    color: #f1f1f1;
+}
+
+Voici une explication de ce que font ces règles CSS :
+
+1. `.btn-toggle` : cette règle s'applique à tout élément HTML avec la classe `btn-toggle`.
+   - `position: absolute;` positionne l'élément par rapport à l'élément parent le plus proche qui n'est pas positionné de manière statique. Si aucun élément parent ne correspond à cette description, il est positionné par rapport au bloc contenant le document HTML.
+   - `top: 10px;` et `right: 10px;` placent l'élément à 10 pixels du bord supérieur et du bord droit respectivement de l'élément parent.
+   - `border-radius: 50%;` arrondit les coins de l'élément pour lui donner une apparence de cercle.
+   - `width: 75px;` et `height: 75px;` définissent la largeur et la hauteur de l'élément à 75 pixels respectivement.
+   - `display: flex;` indique que l'élément est un conteneur flexbox. Les éléments à l'intérieur du conteneur (les "items" flexbox) sont alors disposés en fonction des règles flexbox.
+   - `justify-content: center;` et `align-items: center;` sont des propriétés de flexbox qui centrent les éléments à l'intérieur du conteneur à la fois horizontalement et verticalement.
+   - `outline: none;` supprime le contour qui apparaît généralement autour de l'élément lorsqu'il est ciblé (par exemple, lorsqu'il est cliqué ou sélectionné avec le clavier).
+
+2. `.dark-btn` : cette règle s'applique à tout élément HTML avec la classe `dark-btn`.
+   - `background: #222;` change la couleur d'arrière-plan de l'élément en un gris très foncé.
+   - `color: #f1f1f1;` change la couleur du texte de l'élément en un gris très clair.
+
+Lorsque le bouton bascule en mode sombre, il reçoit la classe `dark-btn` en plus de la classe `btn-toggle`, ce qui modifie son apparence.
